@@ -10,7 +10,7 @@ source:
   sha256: feb879f24d1dce25910790770446d50b03e46ee2ebd7d28157b1705971644f6f
 
 build:
-  number: 6
+  number: 7
   skip: true  # [not linux]
 
 requirements:
@@ -31,7 +31,7 @@ requirements:
     - {{ cdt('libxext') }}     # [linux]
   host:
     - xorg-libxfixes  # [linux]
-    - qt
+    - qt-main
     - gsl
     - zlib
     - freetype
@@ -45,9 +45,9 @@ requirements:
     - libblas
     - libcblas    
   run:
-    - qt
+    - qt-main
     - enchant
-    - qt
+    - qt-main
     - gsl
     - zlib
     - freetype
