@@ -3,7 +3,7 @@ c_compiler:
 c_compiler_version:
 - '10'
 cairo:
-- '1.16'
+- '1'
 cdt_name:
 - cos6
 channel_sources:
@@ -31,20 +31,10 @@ libpng:
 lua:
 - '5'
 pin_run_as_build:
-  cairo:
-    max_pin: x.x
-  freetype:
-    max_pin: x
-  libjpeg_turbo:
-    max_pin: x
-  libpng:
-    max_pin: x.x
   poppler:
     max_pin: x.x
-  zlib:
-    max_pin: x.x
 poppler:
-- '22.04'
+- '22.10'
 qt_main:
 - '5.15'
 target_platform:
