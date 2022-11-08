@@ -32,6 +32,7 @@ requirements:
   host:
     - xorg-libxfixes  # [linux]
     - qt-main
+    - qtspell
     - gsl
     - zlib
     - freetype
@@ -46,6 +47,7 @@ requirements:
     - libcblas
   run:
     - qt-main
+    - qtspell
     - enchant
     - qt-main
     - gsl
