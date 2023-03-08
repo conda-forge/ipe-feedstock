@@ -1,11 +1,11 @@
-About ipe
-=========
+About ipe-feedstock
+===================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipe-feedstock/blob/main/LICENSE.txt)
 
 Home: https://ipe.otfried.org/
 
 Package license: GPL-3.0-only
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ipe-feedstock/blob/main/LICENSE.txt)
 
 Summary: Ipe is a drawing editor for creating figures in PDF format.
 
