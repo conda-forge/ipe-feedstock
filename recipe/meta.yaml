@@ -1,5 +1,5 @@
 {% set name = "ipe" %}
-{% set version = "7.2.24" %}
+{% set version = "7.2.27" %}
 
 package:
   name: {{ name }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://github.com/otfried/ipe/releases/download/v{{ version }}/ipe-{{ version }}-src.tar.gz
-  sha256: feb879f24d1dce25910790770446d50b03e46ee2ebd7d28157b1705971644f6f
+  sha256: c31fdb672f2407b76966ccf9f0179119d4b50736eb22869f80498bc8583bc195
 
 build:
-  number: 13
+  number: 0
   skip: true  # [not linux]
 
 requirements:
@@ -43,7 +43,7 @@ requirements:
     - hicolor-icon-theme
     - poppler
     - libblas
-    - libcblas    
+    - libcblas
   run:
     - qt-main
     - enchant
@@ -59,7 +59,7 @@ requirements:
     - hicolor-icon-theme
     - poppler
     - curl
-    
+
 test:
   commands:
     - test -f $PREFIX/bin/ipe  # [unix]
