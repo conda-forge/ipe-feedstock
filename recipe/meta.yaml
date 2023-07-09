@@ -6,7 +6,9 @@ package:
   version: {{ version }}
 
 source:
-  url: https://github.com/otfried/ipe/releases/download/v{{ version }}/ipe-{{ version }}-src.tar.gz
+  # If/when we're building a release that isn't the latest, we need to use a
+  # repo name of `old-ipe-releases` and not just `ipe`.
+  url: https://github.com/otfried/old-ipe-releases/releases/download/v{{ version }}/ipe-{{ version }}-src.tar.gz
   sha256: e49d0057913a4a516b2017f00d9adb267903528559d1f0c7ebaf6cd914350aa5
 
 build:
