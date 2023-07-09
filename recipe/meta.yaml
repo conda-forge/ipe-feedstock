@@ -1,16 +1,18 @@
 {% set name = "ipe" %}
-{% set version = "7.2.24" %}
+{% set version = "7.2.26" %}
 
 package:
   name: {{ name }}
   version: {{ version }}
 
 source:
-  url: https://github.com/otfried/ipe/releases/download/v{{ version }}/ipe-{{ version }}-src.tar.gz
-  sha256: feb879f24d1dce25910790770446d50b03e46ee2ebd7d28157b1705971644f6f
+  # If/when we're building a release that isn't the latest, we need to use a
+  # repo name of `old-ipe-releases` and not just `ipe`.
+  url: https://github.com/otfried/old-ipe-releases/releases/download/v{{ version }}/ipe-{{ version }}-src.tar.gz
+  sha256: e49d0057913a4a516b2017f00d9adb267903528559d1f0c7ebaf6cd914350aa5
 
 build:
-  number: 13
+  number: 0
   skip: true  # [not linux]
 
 requirements:
@@ -32,6 +34,7 @@ requirements:
   host:
     - xorg-libxfixes  # [linux]
     - qt-main
+    - qtspell
     - gsl
     - zlib
     - freetype
@@ -43,9 +46,10 @@ requirements:
     - hicolor-icon-theme
     - poppler
     - libblas
-    - libcblas    
+    - libcblas
   run:
     - qt-main
+    - qtspell
     - enchant
     - qt-main
     - gsl
@@ -59,7 +63,7 @@ requirements:
     - hicolor-icon-theme
     - poppler
     - curl
-    
+
 test:
   commands:
     - test -f $PREFIX/bin/ipe  # [unix]
