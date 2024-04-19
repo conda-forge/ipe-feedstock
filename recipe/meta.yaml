@@ -12,7 +12,7 @@ source:
   sha256: e49d0057913a4a516b2017f00d9adb267903528559d1f0c7ebaf6cd914350aa5
 
 build:
-  number: 2
+  number: 3
   skip: true  # [not linux]
 
 requirements:
@@ -24,6 +24,7 @@ requirements:
     - libtool
     - doxygen
     - {{ compiler('c') }}
+    - {{ stdlib("c") }}
     - {{ stdlib("c") }}
     - {{ compiler('cxx') }}
     - {{ cdt('mesa-libgl-devel') }}  # [linux]
