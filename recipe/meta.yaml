@@ -12,7 +12,7 @@ source:
   sha256: e49d0057913a4a516b2017f00d9adb267903528559d1f0c7ebaf6cd914350aa5
 
 build:
-  number: 7
+  number: 8
   skip: true  # [not linux]
 
 requirements:
@@ -40,6 +40,7 @@ requirements:
     - gsl
     - zlib
     - freetype
+    - expat
     - cairo
     - libpng
     - libjpeg-turbo
@@ -49,6 +50,7 @@ requirements:
     - poppler
     - libblas
     - libcblas
+    - xorg-xorgproto
   run:
     - qt-main
     - qtspell
