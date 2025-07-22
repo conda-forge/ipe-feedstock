@@ -40,6 +40,7 @@ requirements:
     - gsl
     - zlib
     - freetype
+    - expat
     - cairo
     - libpng
     - libjpeg-turbo
