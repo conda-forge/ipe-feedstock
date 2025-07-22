@@ -50,6 +50,7 @@ requirements:
     - poppler
     - libblas
     - libcblas
+    - xorg-xorgproto
   run:
     - qt-main
     - qtspell
