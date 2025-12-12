@@ -37,7 +37,7 @@ libpng:
 lua:
 - '5'
 poppler:
-- '25.11'
+- '25.12'
 qt_main:
 - '5.15'
 target_platform:
